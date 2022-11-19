@@ -12,33 +12,33 @@ select
    ,MoviaCount = count(Movia.LightId)
 from (
     select
-        SourceSystemCode
-       ,LogTime
-       ,DataFlowDirection
-       ,Username
-       ,ActivationTime
-       ,Date = cast(ActivationTime as date)
-       ,Time = cast(ActivationTime as time)
-       ,Hour = datepart(hour, ActivationTime)
-       ,Day = datename(dw, ActivationTime)
-       ,LightId
-       ,RelayNumber
-       ,Type
+        a.SourceSystemCode
+       ,a.LogTime
+       ,a.DataFlowDirection
+       ,a.Username
+       ,a.ActivationTime
+       ,Date = cast(a.ActivationTime as date)
+       ,Time = cast(a.ActivationTime as time)
+       ,Hour = datepart(hour, a.ActivationTime)
+       ,Day = datename(dw, a.ActivationTime)
+       ,a.LightId
+       ,a.RelayNumber
+       ,a.Type
        ,Event = case
-                    when Type = 1
+                    when a.Type = 1
                         then 'CI'
-                    when Type = 2
+                    when a.Type = 2
                         then 'CO'
                     else 'UNK'
                 end
-       ,LineDesignation
-       ,JourneyNumber
-       ,VehicleNumber
+       ,a.LineDesignation
+       ,a.JourneyNumber
+       ,a.VehicleNumber
     from
-        DW_EDW.data.RT_SignalPriority_Activation
+        DW_EDW.data.RT_SignalPriority_Activation as a
     where
-        cast(LogTime as datetime2) between cast(getdate() - 7 as date) and cast(getdate() as date)
-        and LightId in
+        cast(a.LogTime as datetime2) between cast(getdate() - 7 as date) and cast(getdate() as date)
+        and a.LightId in
             (
                 select distinct
                     LightId
@@ -48,9 +48,9 @@ from (
                     ActivationType = 1
                     and IsCurrent = 1
                     and MunicipalityName = 'København'
-            )
-        and SourceSystemCode = 'RPS'
-        and Type = 1
+            ) 
+        and a.SourceSystemCode = 'RPS'
+        and a.Type = 1
 ) as Movia
 group by
     Movia.Date

@@ -10,4 +10,10 @@
   <Target Name="BeforeBuild">
     <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
   </Target>
+  <ItemGroup>
+    <Build Remove="dim\Views\**" />
+    <Build Remove="data\Views\**" />
+    <Build Remove="fact\Views\**" />
+    <Build Remove="integration\StoredProcedures\**" />
+  </ItemGroup>
 </Project>
