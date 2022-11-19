@@ -12,11 +12,7 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-env:
-  environment: 'dev'
-  azure_cre: ${{ secrets.AZURE_CREDENTIALS_DEV }}
-  azure_sql_cre: ${{secrets.AZURE_SQL_CONNECTION_STRING_DEV}}
-  
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
@@ -30,11 +26,11 @@ jobs:
     - uses: actions/checkout@v1
     - uses: azure/login@v1
       with:
-        creds: ${{env.azure_cre}}
+        creds: ${{secrets.AZURE_CREDENTIALS_DEV }}
         
     - uses: azure/sql-action@v1.2
       with:
-        connection-string: ${{ env.azure_sql_cre}}
+        connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING_DEV}}
         path: './bin/Debug/DatabaseProject-devops-dw-db-dev.dacpac'
         action: 'Publish'
 
