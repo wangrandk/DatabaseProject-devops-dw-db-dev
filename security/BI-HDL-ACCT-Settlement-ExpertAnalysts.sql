@@ -1,0 +1,5 @@
+CREATE USER [BI-HDL-ACCT-Settlement-ExpertAnalysts] FOR EXTERNAL PROVIDER;
+
+
+GO
+

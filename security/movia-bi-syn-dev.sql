@@ -1,0 +1,5 @@
+CREATE USER [movia-bi-syn-dev] FOR EXTERNAL PROVIDER;
+
+
+GO
+

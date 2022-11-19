@@ -1,0 +1,5 @@
+CREATE USER [BI-HDL-Developer-Admin] FOR EXTERNAL PROVIDER;
+
+
+GO
+

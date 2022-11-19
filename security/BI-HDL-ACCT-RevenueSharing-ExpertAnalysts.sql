@@ -1,0 +1,5 @@
+CREATE USER [BI-HDL-ACCT-RevenueSharing-ExpertAnalysts] FOR EXTERNAL PROVIDER;
+
+
+GO
+

@@ -1,0 +1,5 @@
+CREATE USER [movia-bi-adf-dev] FOR EXTERNAL PROVIDER;
+
+
+GO
+

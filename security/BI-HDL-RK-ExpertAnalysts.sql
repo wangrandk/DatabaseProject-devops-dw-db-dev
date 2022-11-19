@@ -1,0 +1,5 @@
+CREATE USER [BI-HDL-RK-ExpertAnalysts] FOR EXTERNAL PROVIDER;
+
+
+GO
+

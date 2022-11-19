@@ -1,0 +1,5 @@
+CREATE USER [BI-HDL-RT-SignalPriority-ExpertAnalyst] FOR EXTERNAL PROVIDER;
+
+
+GO
+

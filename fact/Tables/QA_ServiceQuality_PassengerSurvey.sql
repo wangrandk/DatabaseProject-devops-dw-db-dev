@@ -1,0 +1,43 @@
+CREATE TABLE [fact].[QA_ServiceQuality_PassengerSurvey] (
+    [AnswerKey]               BIGINT         IDENTITY (1, 1) NOT NULL,
+    [DateKey]                 INT            NOT NULL,
+    [TimeKey]                 INT            NOT NULL,
+    [AgeKey]                  INT            NOT NULL,
+    [GenderKey]               INT            NOT NULL,
+    [DefaultTransportModeKey] INT            NOT NULL,
+    [LineKey]                 INT            NOT NULL,
+    [TimeSpanKey]             INT            NOT NULL,
+    [ContractorKey]           INT            NOT NULL,
+    [OperatingDayTypeKey]     INT            NOT NULL,
+    [PurposeKey]              INT            NOT NULL,
+    [FrequencyKey]            INT            NOT NULL,
+    [PlacementKey]            INT            NOT NULL,
+    [LanguageKey]             INT            NOT NULL,
+    [FromStopPointNumberKey]  INT            NOT NULL,
+    [SurveyQuestionKey]       INT            NOT NULL,
+    [SurveyAnswerKey]         INT            NOT NULL,
+    [InterviewTypeKey]        INT            NOT NULL,
+    [DataQualityTypeKey]      INT            NOT NULL,
+    [FileId]                  INT            NOT NULL,
+    [SourceSystemCode]        NVARCHAR (20)  NOT NULL,
+    [SourceSystemEntryId]     BIGINT         NULL,
+    [InterviewId]             BIGINT         NULL,
+    [InterviewerId]           INT            NULL,
+    [InterviewerStartStopNo]  INT            NULL,
+    [InterviewerEndStopNo]    INT            NULL,
+    [RespondentId]            BIGINT         NULL,
+    [AnswerValue]             INT            NULL,
+    [DatedVehicleJourneyId]   BIGINT         NULL,
+    [JourneyRef]              CHAR (18)      NULL,
+    [InterviewStartLatitude]  DECIMAL (8, 6) NULL,
+    [InterviewStartLongitude] DECIMAL (8, 6) NULL,
+    [SourceSystemEntryRef]    NVARCHAR (225) NULL,
+    [Inserted]                DATETIME2 (0)  NOT NULL,
+    [Updated]                 DATETIME2 (0)  NOT NULL,
+    [Hash]                    VARBINARY (32) NOT NULL,
+    CONSTRAINT [PK_QA_ServiceQuality_Answer] PRIMARY KEY CLUSTERED ([AnswerKey] ASC)
+);
+
+
+GO
+
