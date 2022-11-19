@@ -19,5 +19,11 @@
     <Build Remove="security\sk-app-rk-ticket.sql" />
     <Build Remove="security\sk-app-rt-gis_1.sql" />
     <Build Remove="security\sk-app-rt-gis.sql" />
+    <Build Remove="security\sk-legacy-ssis_1.sql" />
+    <Build Remove="security\sk-legacy-ssis.sql" />
+    <Build Remove="security\sk-ReportReader-PBIRS_1.sql" />
+    <Build Remove="security\sk-ReportReader-PBIRS.sql" />
+    <Build Remove="security\sk-ssas_1.sql" />
+    <Build Remove="security\sk-ssas.sql" />
   </ItemGroup>
 </Project>
