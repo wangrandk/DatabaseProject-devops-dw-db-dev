@@ -18,21 +18,19 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
-    - uses: azure/login@v3
-      with:
-        creds: ${{secrets.AZURE_CREDENTIALS_DEV }}
-        
-    - uses: azure/sql-action@v1.2
+    - uses: actions/checkout@v3   
+    - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING_DEV}}
-        path: './bin/Debug/DatabaseProject-devops-dw-db-dev.dacpac'
+        path: './DatabaseProject-devops-dw-db-dev.sqlproj'
         action: 'Publish'
+        build-arguments: '-c Release'                 # Optional build options passed to dotnet build
+        arguments: '/p:DropObjectsNotInSource=false'   # Optional properties and parameters for SqlPackage Publish
 
     # Azure logout 
     - name: logout
