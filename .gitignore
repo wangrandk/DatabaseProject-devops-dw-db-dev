@@ -1,0 +1,19 @@
+bin\Debug\DatabaseProject-devops-dw-db-dev.dll
+bin\Debug\DatabaseProject-devops-dw-db-dev.pdb
+
+## GitHub_Microsoft BI Stack
+temp/
+.vs/
+*.suo
+*.user
+*.log
+*.rdl.data
+*.settings
+*.layout
+*.rsuser
+*.tmp
+*.bim.layout
+*.bim_*.settings
+*.bak
+
+

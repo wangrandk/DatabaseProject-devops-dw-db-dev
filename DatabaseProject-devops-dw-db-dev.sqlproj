@@ -29,5 +29,9 @@
     <Build Remove="security\sk-ws-ess.sql" />
     <Build Remove="security\sk-ws-qa_1.sql" />
     <Build Remove="security\sk-ws-qa.sql" />
+    <Build Remove="security\SqlRoleMembership.sql" />
+    <Build Remove="security\sk-role-deploy.sql" />
+    <Build Remove="security\ssas_1.sql" />
+    <Build Remove="security\ssas.sql" />
   </ItemGroup>
 </Project>
