@@ -23,7 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3   
+    - uses: actions/checkout@v3  
+    - uses: azure/login@v1                            # Azure login required to add a temporary firewall rule
+      with:
+        creds: ${{ secrets.AZURE_CREDENTIALS_DEV}} 
     - uses: azure/sql-action@v2
       with:
         connection-string: ${{ secrets.AZURE_SQL_CONNECTION_STRING_DEV}}
