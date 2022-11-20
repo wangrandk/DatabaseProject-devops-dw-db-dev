@@ -13,7 +13,6 @@
   <ItemGroup>
     <Build Remove="dim\Views\**" />
     <Build Remove="data\Views\**" />
-    <Build Remove="fact\Views\**" />
     <Build Remove="integration\StoredProcedures\**" />
     <Build Remove="security\sk-app-rk-ticket_1.sql" />
     <Build Remove="security\sk-app-rk-ticket.sql" />
