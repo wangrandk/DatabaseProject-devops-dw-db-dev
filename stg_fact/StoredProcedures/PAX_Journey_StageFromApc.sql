@@ -55,8 +55,8 @@ begin
                                                          ,j.[OperatingDayType]
                                                 )
         from
-            [DW_EDW].[data].[RT_Journey] j
-            join [DW_EDW].[dim].[Date] d on
+            [data].[RT_Journey] j
+            join [dim].[Date] d on
                 j.[OperatingDayDate] = d.[Date]
             cross apply (
             select
