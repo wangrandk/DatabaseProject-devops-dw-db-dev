@@ -63,5 +63,11 @@
     <Build Remove="fact\Tables\**" />
     <Build Remove="data\Tables\ACCT_Erp_Transaction.sql" />
     <Build Remove="data\Tables\ACCT_Erp_TransactionDetail.sql" />
+    <Build Remove="data\Tables\RK_PartOfTrip_2021.sql" />
+    <Build Remove="data\Tables\RK_PartOfTrip_2022.sql" />
+    <Build Remove="data\Tables\RK_PartOfTrip_Daily.sql" />
+    <Build Remove="data\Tables\RK_Trip_2021.sql" />
+    <Build Remove="data\Tables\RK_Trip_2022.sql" />
+    <Build Remove="data\Tables\RK_Trip_Daily.sql" />
   </ItemGroup>
 </Project>
