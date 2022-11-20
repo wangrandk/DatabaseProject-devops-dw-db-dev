@@ -33,32 +33,8 @@
     <Build Remove="security\sk-role-deploy.sql" />
     <Build Remove="security\ssas_1.sql" />
     <Build Remove="security\ssas.sql" />
-    <Build Remove="security\ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HDL-ACCT-RevenueSharing-ExpertAnalysts.sql" />
-    <Build Remove="security\ACCT_RevenueSharing_ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HDL-ACCT-Settlement-ExpertAnalysts.sql" />
-    <Build Remove="security\BI-HDL-Developer-Admin.sql" />
-    <Build Remove="security\BI-HDL-Developer-Consultant.sql" />
-    <Build Remove="security\BI-HDL-Developer.sql" />
-    <Build Remove="security\BI-HDL-RK-ExpertAnalysts.sql" />
-    <Build Remove="security\BI-HDL-RK-Transaction-ExpertAnalysts.sql" />
-    <Build Remove="security\BI-HDL-RPL-Beacon-ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HDL-RPS-ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HDL-RT-ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HDL-RT-SignalPriority-ExpertAnalyst.sql" />
-    <Build Remove="security\BI-HG-ACCT-Settlement-ExpertAnalysts.sql" />
-    <Build Remove="security\ACCT_Settlement_ExpertAnalysts.sql" />
-    <Build Remove="security\bi-ua-mi-app-rt-gis-dev.sql" />
-    <Build Remove="security\CC_Puzzel_ExpertAnalyst.sql" />
-    <Build Remove="security\CC-Puzzel-AnonymizedDataAnalyst.sql" />
-    <Build Remove="security\movia-bi-adf-dev.sql" />
-    <Build Remove="security\movia-bi-syn-dev.sql" />
-    <Build Remove="security\RK_Transaction_ExpertAnalyst.sql" />
-    <Build Remove="security\RK_Trip_ExpertAnalyst.sql" />
-    <Build Remove="security\RPL_Beacon_ExpertAnalyst.sql" />
-    <Build Remove="security\RPS_ExpertAnalyst.sql" />
-    <Build Remove="security\RT_ExpertAnalyst.sql" />
-    <Build Remove="security\RT_Journey_ExpertAnalyst.sql" />
-    <Build Remove="security\RT_SignalPriority_ExpertAnalyst.sql" />
+    <Build Remove="data\Tables\ACCT_Erp_Transaction.sql" />
+    <Build Remove="data\Tables\ACCT_Erp_TransactionDetail.sql" />
+    <Build Remove="fact\Tables\**" />
   </ItemGroup>
 </Project>
