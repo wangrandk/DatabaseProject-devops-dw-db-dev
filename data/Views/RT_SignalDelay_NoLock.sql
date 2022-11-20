@@ -1,0 +1,30 @@
+create view [data].[RT_SignalDelay_NoLock] as
+select sd.[SignalId]
+      ,sd.[JourneyRef]
+      ,sd.[LineNumber]
+      ,sd.[EnterDateTimeUtc]
+      ,sd.[CenterDateTimeUtc]
+      ,sd.[IntersectionTraversalSec]
+      ,sd.[PreviousStopPointDelaySec]
+      ,sd.[IsStopInCircle]
+      ,sd.[Hash]
+      ,sd.[Inserted]
+      ,sd.[Updated]
+      ,sd.[LineDesignation]
+      ,sd.[LineDirectionName]
+      ,sd.[EnterDate]
+      ,sd.[EnterTime]
+      ,sd.[EnterMonth]
+      ,sd.[EnterYear]
+      ,sd.[EnterQuarter]
+      ,sd.[EnterDay]
+      ,sd.[EnterTimeBandName]
+      ,sd.[EnterTimeBandBounds]
+      ,sd.[EnterTimeBandAltName]
+      ,sd.[EnterTimeBandAltBounds]
+      ,sd.[CenterDate]
+      ,sd.[CenterTime]
+from [DW_EDW].[data].[RT_SignalDelay] (nolock) AS sd 
+
+GO
+

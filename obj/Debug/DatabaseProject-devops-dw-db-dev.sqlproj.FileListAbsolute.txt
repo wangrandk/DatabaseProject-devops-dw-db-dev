@@ -1,0 +1,10 @@
+c:\MyGit\DatabaseProject-devops-dw-db-dev\bin\Debug\DatabaseProject-devops-dw-db-dev.dacpac
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\DatabaseProject-devops-dw-db-dev.sqlproj.AssemblyReference.cache
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\Model.xml
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\refactor.xml
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\postdeploy.sql
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\predeploy.sql
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\DatabaseProject-devops-dw-db-dev.dll
+c:\MyGit\DatabaseProject-devops-dw-db-dev\obj\Debug\DatabaseProject-devops-dw-db-dev.pdb
+c:\MyGit\DatabaseProject-devops-dw-db-dev\bin\Debug\DatabaseProject-devops-dw-db-dev.dll
+c:\MyGit\DatabaseProject-devops-dw-db-dev\bin\Debug\DatabaseProject-devops-dw-db-dev.pdb
