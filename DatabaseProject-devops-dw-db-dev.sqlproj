@@ -69,5 +69,11 @@
     <Build Remove="data\Tables\RK_Trip_2021.sql" />
     <Build Remove="data\Tables\RK_Trip_2022.sql" />
     <Build Remove="data\Tables\RK_Trip_Daily.sql" />
+    <Build Remove="data\Tables\RK_PaxModel_Daily.sql" />
+    <Build Remove="data\Tables\RK_Transaction.sql" />
+    <Build Remove="data\Tables\RT_VehicleTracker_DepartureEstimateSample.sql" />
+    <Build Remove="data\Tables\RT_VehicleTracker_LinkTravelTime.sql" />
+    <Build Remove="data\Tables\RT_VehicleTracker_MatrixSpecialDay.sql" />
+    <Build Remove="data\Tables\SALE_OperationalSale_MobileSale.sql" />
   </ItemGroup>
 </Project>
