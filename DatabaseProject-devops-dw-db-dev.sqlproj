@@ -13,6 +13,7 @@
   <ItemGroup>
     <Build Remove="dim\Views\**" />
     <Build Remove="data\Views\**" />
+    <Build Remove="fact\Views\**" />
     <Build Remove="integration\StoredProcedures\**" />
     <Build Remove="security\sk-app-rk-ticket_1.sql" />
     <Build Remove="security\sk-app-rk-ticket.sql" />
@@ -59,6 +60,7 @@
     <Build Remove="security\RT_ExpertAnalyst.sql" />
     <Build Remove="security\RT_Journey_ExpertAnalyst.sql" />
     <Build Remove="security\RT_SignalPriority_ExpertAnalyst.sql" />
+    <Build Remove="fact\Tables\**" />
     <Build Remove="data\Tables\ACCT_Erp_Transaction.sql" />
     <Build Remove="data\Tables\ACCT_Erp_TransactionDetail.sql" />
     <Build Remove="data\Tables\RK_PartOfTrip_2021.sql" />
