@@ -61,5 +61,7 @@
     <Build Remove="security\RT_Journey_ExpertAnalyst.sql" />
     <Build Remove="security\RT_SignalPriority_ExpertAnalyst.sql" />
     <Build Remove="fact\Tables\**" />
+    <Build Remove="data\Tables\ACCT_Erp_Transaction.sql" />
+    <Build Remove="data\Tables\ACCT_Erp_TransactionDetail.sql" />
   </ItemGroup>
 </Project>
