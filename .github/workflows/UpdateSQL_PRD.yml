@@ -6,7 +6,7 @@ name: Update SQL Database_PRD
 on:
    workflow_run:
      workflows: ["Update SQL Database_DEV"]
-     branches: [ "main","add-schemas" ]
+     branches: [ "main"]
      types: 
       - completed
    # Allows you to run this workflow manually from the Actions tab
