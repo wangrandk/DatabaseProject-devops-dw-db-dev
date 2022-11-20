@@ -128,7 +128,7 @@ begin
                                                                                     [AssignedFromDateTime]
                                                                           )
             from
-                [DW_EDW].[data].[RT_VehicleJourneyAssignment]
+                [data].[RT_VehicleJourneyAssignment]
             where
                 [SourceSystemCode] = 'PT'
                 and [OperatingDayDate] between dateadd(day, -1, @fromOperatingDayDate) and dateadd(day, 1, @toOperatingDayDate)
