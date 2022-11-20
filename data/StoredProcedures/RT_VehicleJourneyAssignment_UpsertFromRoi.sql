@@ -47,15 +47,15 @@ begin
            ,[VehicleGid]
         )
         select
-            [SourceSystemCode] = 'PT'
-           ,[SourceSystemEntryRef] = [vja].[Id]
+            'PT' as [SourceSystemCode]
+           ,[vja].[Id] as [SourceSystemEntryRef] 
            ,[j].[JourneyRef]
            ,[vja].[OperatingDayDate]
-           ,[AssignmentType] = 0
-           ,[AssignedFromDateTime] = [vja].[ValidFromDateTime]
-           ,[AssignedToDateTime] = [vja].[InvalidFromDateTime]
-           ,[VehicleNumber] = [vja].[IsToVehicleGid] % 100000
-           ,[VehicleGid] = [vja].[IsToVehicleGid]
+           ,0 as [AssignmentType]
+           ,[vja].[ValidFromDateTime] as [AssignedFromDateTime]
+           ,[vja].[InvalidFromDateTime] as [AssignedToDateTime]
+           ,[vja].[IsToVehicleGid] % 100000 as [VehicleNumber]
+           ,[vja].[IsToVehicleGid] as [VehicleGid]
         from
             [data].[RT_ROI_VehicleJourneyAssignment] vja
             join [data].[RT_Journey] j on
@@ -81,15 +81,15 @@ begin
            ,[VehicleGid]
         )
         select
-            [SourceSystemCode] = 'PT'
-           ,[SourceSystemEntryRef] = [vja].[Id]
+            'PT' as [SourceSystemCode] 
+           ,[vja].[Id] as [SourceSystemEntryRef] 
            ,[j].[JourneyRef]
            ,[vja].[OperatingDayDate]
-           ,[AssignmentType] = 0
-           ,[AssignedFromDateTime] = [vja].[ValidFromDateTime]
-           ,[AssignedToDateTime] = [vja].[InvalidFromDateTime]
-           ,[VehicleNumber] = [vja].[IsToVehicleGid] % 100000
-           ,[VehicleGid] = [vja].[IsToVehicleGid]
+           , 0 as [AssignmentType]
+           ,[vja].[ValidFromDateTime] as [AssignedFromDateTime] 
+           ,[vja].[InvalidFromDateTime] as [AssignedToDateTime] 
+           ,[vja].[IsToVehicleGid] % 100000 as [VehicleNumber] 
+           ,[vja].[IsToVehicleGid] as [VehicleGid]
         from
             [stg].[RT_ROI_VehicleJourneyAssignment] vja
             join [data].[RT_Journey] j on
